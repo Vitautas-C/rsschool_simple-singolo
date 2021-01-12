@@ -229,7 +229,7 @@ function portfolioSort(sort) {
         portfolioCategoryAllFileName.forEach((allFileName) => {
             imgAll = document.createElement("div");
             imgAll.classList.add("portfolio__card-pic");
-            imgAll.innerHTML = `<img src="/img/portfolio/${allFileName}" alt="Photo" class="portfolio__card-thumb">`;
+            imgAll.innerHTML = `<img src="img/portfolio/${allFileName}" alt="Photo" class="portfolio__card-thumb">`;
             portfolio__cards.append(imgAll);
         });
     } else {
@@ -245,7 +245,7 @@ function portfolioSort(sort) {
         portfolioCategoryNewFileName.forEach((newFileName) => {
             img = document.createElement("div");
             img.classList.add("portfolio__card-pic");
-            img.innerHTML = `<img src="/img/portfolio/${newFileName}" alt="Photo" class="portfolio__card-thumb">`;
+            img.innerHTML = `<img src="img/portfolio/${newFileName}" alt="Photo" class="portfolio__card-thumb">`;
             portfolio__cards.append(img);
         });
     }
