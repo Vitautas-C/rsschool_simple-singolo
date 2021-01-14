@@ -118,9 +118,6 @@
     /* Header styles end */
     /* Slider styles start */
     
-    //  .slider {
-    //      display: flex;
-    // }
     .slider__slide-2,
     .slider__slide-1 {
         display: none;
@@ -184,7 +181,6 @@
     .slider__controls-right:focus,
     .slider__controls-right:active {
         cursor: pointer;
-        // box-shadow: 0 0 10px, 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
     }
     
     .phone__vertical {
@@ -325,7 +321,6 @@
     .slider__controls-right:focus,
     .slider__controls-right:active {
         cursor: pointer;
-        // box-shadow: 0 0 10px, 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
     }
     
     .phone__big {

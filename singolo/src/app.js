@@ -3,18 +3,8 @@ console.log('Hello, SASS');
 console.log('Hello, HTML');
 
 
-// let linksMenu = document.querySelectorAll(".header__item");
-// for (let i = 0; i < linksMenu.length; i++) {
-//     linksMenu[i].onclick = function() {
-//         document.getElementById("burger-icon").classList.toggle("rotated");
-//         document.querySelector(".header__nav").classList.toggle("opened");
-//     };
-// }
 
 // // menu start // //
-
-
-//
 
 const main = document.querySelector(".main");
 const footer = document.querySelector(".footer");
@@ -22,14 +12,6 @@ const logo = document.querySelector(".header__logo-text");
 const navBar = document.querySelector(".header__nav");
 const burgerIcon = document.querySelector(".header__hamburger-menu-icon");
 const linksMenu = document.querySelectorAll(".header__item");
-
-
-
-// linksMenu.addEventListener("click", () => {
-//     linksMenu.querySelectorAll(".header__item").forEach()
-//     burgerIcon.classList.toggle("rotated");
-//     navBar.classList.toggle("opened");
-// });
 
 
 for (let i = 0; i < linksMenu.length; i++) {
@@ -67,6 +49,7 @@ main.addEventListener("click", () => {
         logo.classList.add("centered");
     }
 });
+
 
 footer.addEventListener("click", () => {
     if (navBar.classList.contains("opened")) {
@@ -106,8 +89,8 @@ document.getElementById("phone-small-right__button").addEventListener("click", (
 // // phone screen end // //
 // // scroll start // //
 
-
 document.addEventListener("scroll", onScroll);
+
 
 function onScroll() {
     let curPos = window.scrollY;
@@ -125,30 +108,6 @@ function onScroll() {
     });
 };
 
-
-
-// document.addEventListener("scroll", onScroll);
-
-// function onScroll() {
-//     let curPos = window.scrollY;
-//     const sections = document.querySelectorAll("section");
-//     const links = document.querySelectorAll(".header__link");
-//     sections.forEach((el) => {
-//         console.log(el)
-//     })
-// }
-
-
-
-
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener("click", function(e) {
-//         e.preventDefault();
-//         document.querySelector(this.getAttribute("href")).scrollIntoView({
-//             behavior: "smooth"
-//         });
-//     });
-// });
 
 // // scroll end // //
 // // slider   start // // 
@@ -188,13 +147,13 @@ arrowLeft.addEventListener("click", () => {
 
 const navPortfolio = document.querySelector(".portfolio__category");
 
+
 navPortfolio.addEventListener("click", (event) => {
     if (event.target.classList.contains("portfolio-category__filter")) {
         navPortfolio.querySelectorAll("div").forEach(el => el.classList.remove("portfolio-category__filter-active"));
         if (event.target.classList.contains("portfolio-category__filter")) { event.target.classList.add("portfolio-category__filter-active"); }
     }
 });
-
 
 //
 
@@ -272,18 +231,11 @@ let portfolioCategoryAll = [
     { fileName: "portfolio-16.jpg", category: "artwork" },
     { fileName: "portfolio-17.jpg", category: "graphicDesign" },
 ];
+
 //
 
-
-// function shuffle(array) {
-//     for (let i = array.length - 1; i > 0; i--) {
-//         let j = Math.floor(Math.random() * (i + 1));
-//         [array[i], array[j]] = [array[j], array[i]];
-//     }
-// }
-
-
 const portfolioCards = document.querySelector(".portfolio__cards");
+
 
 portfolioCards.addEventListener("click", (event) => {
     if (event.target.classList.contains("portfolio__card-thumb")) {
@@ -291,7 +243,6 @@ portfolioCards.addEventListener("click", (event) => {
         if (event.target.classList.contains("portfolio__card-thumb")) { event.target.classList.add("portfolio__card-thumb-active"); }
     }
 });
-
 
 // // portfolio filter end // //
 // //  modal window start // // 
@@ -367,4 +318,3 @@ form.onsubmit = function(evt) {
 }
 
 // // modal window end // //
-// //   start // //
